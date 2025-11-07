@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://grandmuseumegypt.github.io/sitemap.xml

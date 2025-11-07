@@ -3,55 +3,54 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>خطة الزيارة | Visit</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>GEM • Visit</title>
+  <meta name="description" content="Grand Egyptian Museum — premium mobile-first liquid glass experience."/>
   <link rel="stylesheet" href="styles.css">
   <script defer src="transition.js"></script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%23eab308' d='M6 54 32 6l26 48H6z'/%3E%3C/svg%3E">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Museum", "name": "Grand Egyptian Museum", "address": "Cairo\u2013Faiyum Road, Nazlet El-Semman, Al Haram, Giza", "url": "https://grandmuseumegypt.github.io/"}</script>
 </head>
 <body>
-  <header class="nav glass">
-    <div class="nav-inner">
-      <div class="font-bold tracking-wide text-white">المتحف المصري الكبير</div>
-      <nav class="nav-links"><a class="btn glass " href="index.html">الرئيسية</a><a class="btn glass " href="about.html">عن المتحف</a><a class="btn glass " href="highlights.html">المعروضات</a><a class="btn glass " href="collections.html">المجموعات</a><a class="btn glass opacity-60" href="visit.html">خطة الزيارة</a><a class="btn glass " href="faq.html">الأسئلة</a><a class="btn glass " href="contributors.html">صُنّاع المتحف</a><a class="btn glass " href="contact.html">تواصل</a></nav>
-      <button onclick="document.body.classList.toggle('lang-ar');document.body.classList.toggle('lang-en');" class="btn glass lang-toggle">🌐</button>
+  <header class="header glass">
+    <div class="row">
+      <div class="brand">Grand Egyptian Museum</div>
+      <nav class="nav"><a class="btn glass" href="index.html">Home/الرئيسية</a><a class="btn glass" href="about.html">About/عن المتحف</a><a class="btn glass" href="highlights.html">Highlights/المعروضات</a><a class="btn glass" href="collections.html">Collections/المجموعات</a><a class="btn glass btn-cta" href="visit.html">Visit/الزيارة</a><a class="btn glass" href="faq.html">FAQ/الأسئلة</a><a class="btn glass" href="contributors.html">Contributors/صُنّاع</a><a class="btn glass" href="contact.html">Contact/تواصل</a></nav>
+      <button onclick="toggleLang()" class="btn glass" aria-label="Toggle Language">🌐</button>
     </div>
   </header>
-
   
-<section class="container mt-8 mb-6 glass p-6">
-  <h2 class="title">المواعيد</h2>
-  <p class="subtle">يوميًا من 9:00 صباحًا حتى 7:00 مساءً (قد تختلف في العطلات).</p>
+<section class="section glass bigpad">
+  <h2 class="title">Hours</h2>
+  <p class="subtle">Daily 09:00 – 19:00 (subject to seasonal changes).</p>
 </section>
-
-<section class="container mt-0 mb-6 glass p-6">
-  <h2 class="title">الأسعار</h2>
+<section class="section glass bigpad">
+  <h2 class="title">Ticket Prices</h2>
   <ul class="subtle">
-    <li>المصريون: <strong>350</strong> جنيه</li>
-    <li>الطلاب/الشباب المصريون: <strong>175</strong> جنيه</li>
-    <li>الزوار العرب والأجانب غير المقيمين: <strong>1700</strong> جنيه</li>
-    <li>الزوار العرب والأجانب المقيمون في مصر: <strong>850</strong> جنيه</li>
+    <li>Egyptians (Adults): <b>350 EGP</b></li>
+    <li>Egyptians (Students): <b>175 EGP</b></li>
+    <li>Foreigners (Non-Residents): <b>1700 EGP</b></li>
+    <li>Foreigners (Residents in Egypt): <b>850 EGP</b></li>
+  </ul>
+  <p class="subtle" style="margin-top:.5rem">Prices may change — please verify before your visit.</p>
+</section>
+<section class="section glass bigpad">
+  <h2 class="title">Address</h2>
+  <p class="subtle">Cairo–Faiyum Road, Nazlet El-Semman, Al Haram, Giza</p>
+  <p><a class="btn glass btn-cta" href="https://maps.app.goo.gl/" target="_blank" rel="noopener">Open in Google Maps</a></p>
+</section>
+<section class="section glass bigpad">
+  <h2 class="title">Tips</h2>
+  <ul class="subtle">
+    <li>Pre-book during peak seasons.</li>
+    <li>Wear comfortable shoes.</li>
+    <li>Plan 2–4 hours for a full experience.</li>
+    <li>Photography allowed in designated areas.</li>
   </ul>
 </section>
 
-<section class="container mt-0 mb-6 glass p-6">
-  <h2 class="title">الوصول</h2>
-  <p class="subtle">بجوار أهرامات الجيزة؛ موقع استراتيجي يربط القاهرة بالجيزة.</p>
-</section>
-
-<section class="container mt-0 mb-10 glass p-6">
-  <h2 class="title">نصائح</h2>
-  <ul class="subtle">
-    <li>احجز تذكرتك مبكرًا في المواسم.</li>
-    <li>ارتدِ أحذية مريحة.</li>
-    <li>خصص 3 ساعات على الأقل.</li>
-    <li>التصوير مسموح في مناطق محددة.</li>
-  </ul>
-</section>
-
-
-  <footer class="container mb-6 mt-10">
-    <div class="glass p-4 rounded-2xl credit">
-      Developed with ❤ by <span class="font-semibold text-white">Mohamed El-Najjar</span>
+  <footer class="section">
+    <div class="glass bigpad" style="text-align:center">
+      <div class="credit">Developed with ❤ by <b>Mohamed El-Najjar</b></div>
     </div>
   </footer>
 </body>
